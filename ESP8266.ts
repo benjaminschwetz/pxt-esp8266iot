@@ -57,18 +57,6 @@ namespace ESP8266_IoT {
     }
 
     /**
-     * TODO: connect thingspeak IoT TCP server 
-    */
-    //% weight=98
-    //% blockId="TCP_connect" block="connect thingspeak"
-    export function connectthingspeak(): void {
-        // Add code here
-        let text = "AT+CIPSTART=\"TCP\",\"api.thingspeak.com\",80"
-        serial.writeString(text + "\u000D" + "\u000A")
-        basic.pause(6000)
-    }
-
-    /**
      * TODO: Set data to be sent.
      * @param write_api_key describe parameter here, eg: "your write api key"
      * @param n1 describe parameter here, eg: 0
